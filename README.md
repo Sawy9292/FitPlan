@@ -6,21 +6,21 @@
 
 **1. Visitor (Unauthenticated User)**: View landing page with platform overview and benefits. Access registration to create user account. View login page for existing users.
 
-**2. Registered User**: Browse workout and meal plans with filtering by goals, difficulty, duration, and diet type. View detailed plan information including schedules, exercises, and nutrition. Save plans to favorites/wishlist. Start and track active plans. Log daily activities including workouts, meals, water intake, and weight. Track progress with visual charts and statistics. Upload progress photos. Update profile information and fitness goals.
+**2. Registered User** : Browse workout and meal plans with filtering by goals, difficulty, duration, and diet type. View detailed plan information including schedules, exercises, and nutrition. Save plans to favorites/wishlist. Start and track active plans. Log daily activities including workouts, meals, water intake, and weight. Track progress with visual charts and statistics. Upload progress photos. Update profile information and fitness goals.
 
 ## Features
 
-* User Authentication & Profile Management**: Secure JWT-based authentication with password hashing. User registration with fitness profile setup (height, weight, activity level). Profile updates including current weight, target weight, and daily caloric goals. Avatar and progress photo management.
+* **User Authentication & Profile Management:** Secure JWT-based authentication with password hashing. User registration with fitness profile setup (height, weight, activity level). Profile updates including current weight, target weight, and daily caloric goals. Avatar and progress photo management.
 
-* Plan Browsing & Discovery**: Tabbed interface for workout and meal plans (8 total plans: 4 workout + 4 meal). Filter by goal (weight loss, muscle gain, endurance, health), difficulty (beginner, intermediate, advanced), duration (4-12 weeks), and diet type (high protein, Mediterranean, low calorie, vegan). Plan cards display key metadata, difficulty badges, and favorite toggle. Clear filters functionality.
+* **Plan Browsing & Discovery:** Tabbed interface for workout and meal plans (8 total plans: 4 workout + 4 meal). Filter by goal (weight loss, muscle gain, endurance, health), difficulty (beginner, intermediate, advanced), duration (4-12 weeks), and diet type (high protein, Mediterranean, low calorie, vegan). Plan cards display key metadata, difficulty badges, and favorite toggle. Clear filters functionality.
 
-* Interactive Plan Details**: Three-tab layout (Overview, Schedule, Details). Weekly schedule breakdown with daily activities. Embedded YouTube exercise videos for workout plans. Nutrition information and meal options for meal plans. PDF download links. "Start Today" button to activate plans. Save/favorite toggle for quick access.
+* **Interactive Plan Details:** Three-tab layout (Overview, Schedule, Details). Weekly schedule breakdown with daily activities. Embedded YouTube exercise videos for workout plans. Nutrition information and meal options for meal plans. PDF download links. "Start Today" button to activate plans. Save/favorite toggle for quick access.
 
-* Daily Activity Logging**: Date-based logging system with persistent storage. Weight tracking with visual progress charts. Water intake counter with increment/decrement buttons. Workout completion checklist with custom workout additions. Food search with 100+ item database across 10 categories. Meal logging with automatic macro calculation (calories, protein, carbs, fat). Daily caloric goal tracking with visual feedback.
+* **Daily Activity Logging:** Date-based logging system with persistent storage. Weight tracking with visual progress charts. Water intake counter with increment/decrement buttons. Workout completion checklist with custom workout additions. Food search with 100+ item database across 10 categories. Meal logging with automatic macro calculation (calories, protein, carbs, fat). Daily caloric goal tracking with visual feedback.
 
-* Progress Tracking & Analytics**: Profile dashboard with key statistics (workouts completed, active streak, completed plans). Weight progress visualization with canvas-based charts. Historical weight data tracking. Photo upload system (before/after/progress categories). Progress photo gallery. Caloric goal management and recommendations.
+* **Progress Tracking & Analytics:** Profile dashboard with key statistics (workouts completed, active streak, completed plans). Weight progress visualization with canvas-based charts. Historical weight data tracking. Photo upload system (before/after/progress categories). Progress photo gallery. Caloric goal management and recommendations.
 
-* Favorites/Wishlist System**: Bookmark unlimited workout and meal plans. Quick toggle add/remove from browse and detail pages. Dedicated favorites section in profile. One-click navigation to favorited plans.
+* **Favorites/Wishlist System:** Bookmark unlimited workout and meal plans. Quick toggle add/remove from browse and detail pages. Dedicated favorites section in profile. One-click navigation to favorited plans.
 
 ## Additional Features
 Extensive nutrition database with 100+ food items organized by category: **Breakfast** (oatmeal, eggs, yogurt), **Lunch** (chicken, salmon, rice), **Dinner** (beef, pasta, shrimp), **Snacks** (nuts, protein bars, fruits), **Drinks** (water, protein shakes, juice), **Grains**, **Vegetables**, **Fruits**, **Proteins**, and **Dairy**. Each item includes complete macro breakdown (calories, protein, carbs, fat). Real-time search with suggestions dropdown. Automatic daily totals calculation for meal logging.
