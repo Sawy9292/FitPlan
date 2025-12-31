@@ -1,0 +1,53 @@
+/run/media/whiteman/Projects/Front/Demo/FrontEnd/backend/services/tracking_service.py:21: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [18545]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8004 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57428 - "GET /users/user_d73885c85139/logs/2025-12-27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55884 - "GET /users/user_d73885c85139/logs/2025-12-27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59662 - "GET /users/user_d73885c85139/logs/2025-12-27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /users/user_d73885c85139/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59692 - "GET /users/user_d73885c85139/logs/2025-12-27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59706 - "GET /users/user_d73885c85139/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59714 - "GET /users/user_d73885c85139/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59722 - "GET /users/user_d73885c85139/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34928 - "GET /users/user_d73885c85139/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34936 - "GET /users/user_d73885c85139/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51038 - "GET /users/user_23836f190104/logs/2025-12-27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60688 - "GET /users/user_23836f190104/logs/2025-12-27 HTTP/1.1" 200 OK
+/run/media/whiteman/Projects/Front/Demo/FrontEnd/backend/services/tracking_service.py:120: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+  meals=[m.dict() for m in request.meals],
+/run/media/whiteman/Projects/Front/Demo/FrontEnd/backend/services/tracking_service.py:123: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  created_at=datetime.utcnow(),
+/run/media/whiteman/Projects/Front/Demo/FrontEnd/backend/services/tracking_service.py:124: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  updated_at=datetime.utcnow()
+/run/media/whiteman/Projects/Front/Demo/FrontEnd/backend/services/tracking_service.py:238: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  today = datetime.utcnow().date()
+/run/media/whiteman/Projects/Front/Demo/FrontEnd/backend/services/tracking_service.py:253: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  progress.updated_at = datetime.utcnow()
+INFO:     127.0.0.1:51302 - "POST /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51304 - "GET /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51316 - "GET /users/user_23836f190104/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51322 - "GET /users/user_23836f190104/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51358 - "GET /users/user_23836f190104/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51332 - "GET /users/user_23836f190104/logs/2025-12-27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51344 - "GET /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51362 - "GET /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45820 - "GET /users/user_23836f190104/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45844 - "GET /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45834 - "GET /users/user_23836f190104/logs/2025-12-27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45848 - "GET /users/user_23836f190104/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45862 - "GET /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47590 - "GET /users/user_23836f190104/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47604 - "GET /users/user_23836f190104/logs/2025-12-27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47618 - "GET /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47634 - "GET /users/user_23836f190104/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47640 - "GET /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46850 - "GET /users/user_23836f190104/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46860 - "GET /users/user_23836f190104/progress HTTP/1.1" 200 OK

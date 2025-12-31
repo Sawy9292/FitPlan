@@ -1,0 +1,29 @@
+body { 
+    font-family: system-ui, -apple-system, sans-serif; 
+    padding: 20px; 
+    background: #f5f5f5;
+}
+.test { 
+    margin: 10px 0; 
+    padding: 15px; 
+    border-radius: 8px;
+    background: white;
+    border-left: 4px solid #ccc;
+}
+.pass { border-left-color: #28a745; }
+.fail { border-left-color: #dc3545; }
+.pending { border-left-color: #ffc107; }
+.test-name { font-weight: bold; margin-bottom: 5px; }
+.test-message { color: #666; font-size: 14px; }
+h1 { color: #333; }
+.error { color: #dc3545; font-family: monospace; font-size: 12px; }
+button { 
+    padding: 10px 20px; 
+    margin: 10px 5px 10px 0; 
+    border: none; 
+    background: #007bff; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+button:hover { background: #0056b3; }

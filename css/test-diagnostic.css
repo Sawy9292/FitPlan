@@ -1,0 +1,5 @@
+body { font-family: monospace; padding: 20px; }
+.test { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+.pass { background: #d4edda; }
+.fail { background: #f8d7da; }
+.pending { background: #fff3cd; }

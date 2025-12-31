@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="css/browse.css">
+<div class="browse-container">
+    <div style="text-align: center; margin: 40px 0;">
+        <div class="tabs" id="plan-tabs" style="justify-content: center;">
+            <button class="tab-btn active" data-tab="workout" onclick="switchBrowseTab('workout')">
+                Workout Plans
+            </button>
+            <button class="tab-btn" data-tab="meal" onclick="switchBrowseTab('meal')">
+                Meal Plans
+            </button>
+        </div>
+    </div>
+
+    <div class="filter-section">
+        <div class="filter-group">
+            <label>Goal</label>
+            <select id="goalFilter" onchange="filterAndDisplayPlans()">
+                <option value="">All Goals</option>
+                <option value="weight loss">Weight Loss</option>
+                <option value="muscle gain">Muscle Gain</option>
+                <option value="strength">Strength</option>
+                <option value="marathon">Marathon</option>
+                <option value="fitness">General Fitness</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Difficulty</label>
+            <select id="difficultyFilter" onchange="filterAndDisplayPlans()">
+                <option value="">All Levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Duration</label>
+            <select id="durationFilter" onchange="filterAndDisplayPlans()">
+                <option value="">Any Duration</option>
+                <option value="4 weeks">4 weeks</option>
+                <option value="6 weeks">6 weeks</option>
+                <option value="8 weeks">8 weeks</option>
+                <option value="12 weeks">12 weeks</option>
+            </select>
+        </div>
+
+        <div class="filter-group" id="equipmentFilter">
+            <label>Equipment</label>
+            <select id="eqFilter" onchange="filterAndDisplayPlans()">
+                <option value="">All Equipment</option>
+                <option value="None">No Equipment</option>
+                <option value="Dumbbells">Dumbbells</option>
+                <option value="Barbell">Barbell</option>
+            </select>
+        </div>
+
+        <div class="filter-group" id="dietFilter" style="display:none;">
+            <label>Diet Type</label>
+            <select id="dtFilter" onchange="filterAndDisplayPlans()">
+                <option value="">All Diets</option>
+                <option value="High Protein">High Protein</option>
+                <option value="Mediterranean">Mediterranean</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Low Calorie">Low Calorie</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="plans-grid" id="plans-container"></div>
+</div>

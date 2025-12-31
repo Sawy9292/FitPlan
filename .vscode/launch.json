@@ -1,0 +1,88 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start All Backend Services",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/start_services.bat",
+      "windows": {
+        "program": "${workspaceFolder}\\backend\\start_services.bat"
+      },
+      "console": "integratedTerminal",
+      "preLaunchTask": "Start Backend Services (Batch)"
+    },
+    {
+      "name": "Auth Service (Debug)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/services/auth_service.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/backend"
+      }
+    },
+    {
+      "name": "User Service (Debug)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/services/user_service.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/backend"
+      }
+    },
+    {
+      "name": "Plan Service (Debug)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/services/plan_service.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/backend"
+      }
+    },
+    {
+      "name": "Tracking Service (Debug)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/services/tracking_service.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/backend"
+      }
+    },
+    {
+      "name": "API Gateway (Debug)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/gateway/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/backend"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "All Services (Debug Mode)",
+      "configurations": [
+        "Auth Service (Debug)",
+        "User Service (Debug)",
+        "Plan Service (Debug)",
+        "Tracking Service (Debug)",
+        "API Gateway (Debug)"
+      ],
+      "presentation": {
+        "hidden": false,
+        "group": "backend",
+        "order": 1
+      }
+    }
+  ]
+}

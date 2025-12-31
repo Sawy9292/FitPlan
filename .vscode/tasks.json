@@ -1,0 +1,118 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Backend Services (Batch)",
+      "type": "shell",
+      "command": "${workspaceFolder}/backend/start_services.bat",
+      "windows": {
+        "command": "${workspaceFolder}\\backend\\start_services.bat"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop Backend Services (Batch)",
+      "type": "shell",
+      "command": "${workspaceFolder}/backend/stop_services.bat",
+      "windows": {
+        "command": "${workspaceFolder}\\backend\\stop_services.bat"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Backend Services (PowerShell)",
+      "type": "shell",
+      "command": "${workspaceFolder}/backend/start_services.ps1",
+      "windows": {
+        "command": "${workspaceFolder}\\backend\\start_services.ps1"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop Backend Services (PowerShell)",
+      "type": "shell",
+      "command": "${workspaceFolder}/backend/stop_services.ps1",
+      "windows": {
+        "command": "${workspaceFolder}\\backend\\stop_services.ps1"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Backend Services (Bash)",
+      "type": "shell",
+      "command": "./start_services.sh",
+      "options": {
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop Backend Services (Bash)",
+      "type": "shell",
+      "command": "./stop_services.sh",
+      "options": {
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "View Gateway Logs",
+      "type": "shell",
+      "command": "type",
+      "args": ["${workspaceFolder}\\backend\\logs\\gateway.log"],
+      "windows": {
+        "command": "type",
+        "args": ["${workspaceFolder}\\backend\\logs\\gateway.log"]
+      },
+      "linux": {
+        "command": "tail",
+        "args": ["-f", "${workspaceFolder}/backend/logs/gateway.log"]
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Check Services Status",
+      "type": "shell",
+      "command": "netstat -ano | findstr \"8000 8001 8002 8003 8004\"",
+      "windows": {
+        "command": "netstat -ano | findstr \"8000 8001 8002 8003 8004\""
+      },
+      "linux": {
+        "command": "lsof -i :8000,8001,8002,8003,8004"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
